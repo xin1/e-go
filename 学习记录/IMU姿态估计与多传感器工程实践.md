@@ -254,12 +254,10 @@ https://github.com/xioTechnologies/Gait-Tracking-With-x-IMU
 ### 6.3 实际测试
 
 官方代码，进行优化可检测多传感器数据
-
-![image-20260818115704151](C:\Users\xinye\AppData\Roaming\Typora\typora-user-images\image-20260818115704151.png)
+<img width="2159" height="1365" alt="image-20260818115704151" src="https://github.com/user-attachments/assets/e2a09249-605c-471f-900e-60192f7f8b0a" />
 
 写了个demo使其展示进行观察
-
-![image-20260818154121214](C:\Users\xinye\AppData\Roaming\Typora\typora-user-images\image-20260818154121214.png)
+<img width="2105" height="1147" alt="image-20260818154121214" src="https://github.com/user-attachments/assets/a8da4e6f-37cd-4723-8669-e5cfd85caf9e" />
 
 ### 6.3 学习代码
 
