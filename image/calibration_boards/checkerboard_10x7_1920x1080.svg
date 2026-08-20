@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1920"
+     height="1080"
+     viewBox="0 0 1920 1080"
+     preserveAspectRatio="xMidYMid meet"
+     shape-rendering="crispEdges">
+  <title>10 by 7 camera calibration checkerboard</title>
+  <desc>10 columns by 7 rows, 9 by 6 inner corners, 120 pixels per square.</desc>
+  <defs>
+    <pattern id="checker" width="240" height="240" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="120" height="120" fill="#000000"/>
+      <rect x="120" y="120" width="120" height="120" fill="#000000"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#ffffff"/>
+  <rect x="360" y="120" width="1200" height="840" fill="url(#checker)"/>
+</svg>
