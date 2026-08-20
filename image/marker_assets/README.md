@@ -1,28 +1,5 @@
 # Marker Assets
 
-这个目录放视觉标记素材，例如 ArUco、AprilTag 或 Find-GCP 字典生成的标记图案。
-
-## 当前用途
-
-这些图案可以用于：
-
-- 打印成纸质标记。
-- 投放到显示器上测试。
-- 制作实体三面标记。
-- 作为调试识别效果的参考素材。
-
-## 重要参数
-
-实时 PnP 程序最关心的是标记的真实边长：
-
-```text
---marker-length 0.04
-```
-
-这里 `0.04` 表示 40 mm，单位是米。
-
-注意：这个长度应该是摄像头实际看到的黑色标记外边框边长，而不是图片文件的像素尺寸。
-
 ## 字典选择
 
 当前你使用的 Find-GCP 自定义 3x3 字典建议写：
@@ -37,38 +14,17 @@
 --dictionary DICT_4X4_50
 ```
 
-## 标记 ID
+测试图片
+<img width="500" height="300" alt="24d75419e04cfc0cd8cf51c99bddc85a" src="https://github.com/user-attachments/assets/f0814843-4346-4a31-aecf-c42ae6977586" />
+<img width="500" height="300" alt="8965fc31577e06a7127631fb3bc1a4eb" src="https://github.com/user-attachments/assets/a7945751-5991-48e9-adfb-fe4ab83390cd" />
+<img width="500" height="300" alt="f11f11c703bc1d7800477285f831484f" src="https://github.com/user-attachments/assets/4ebf6fbc-c621-4ccd-8e99-8bd0d08944b7" />
+<img width="500" height="300" alt="a63e4ab49186016dcbb27b160f213a48" src="https://github.com/user-attachments/assets/ae2fd88d-7cd0-406a-9b65-eb151dd777c9" />
+<img width="500" height="300" alt="0a60ad9cca53f0df88188803f40537bf" src="https://github.com/user-attachments/assets/c556851a-e790-43ba-8ef8-f2d01939ad7c" />
+<img width="500" height="300" alt="2ec0224f63e5824620eb59890005ac10" src="https://github.com/user-attachments/assets/8baf7478-3117-40c6-9b0c-855f25c9a737" />
+<img width="500" height="300" alt="4b3301af367b6fa4a2b8c799ebdaf2ed" src="https://github.com/user-attachments/assets/f84c1357-a61a-4f0a-b4f2-5bcc1dde701e" />
+<img width="500" height="300" alt="6b367424abcf659d43b7f158b104af01" src="https://github.com/user-attachments/assets/5ddb2bfd-427e-41ff-a394-f9fc6f78ce58" />
+<img width="500" height="300" alt="644e49bc7c6facae35a13223132c3a82" src="https://github.com/user-attachments/assets/3ac96235-65c0-4505-834b-2bf10d3dd039" />
+<img width="500" height="300" alt="0bf1d4bf80f6f626021f45f1f2565d5c" src="https://github.com/user-attachments/assets/a579aa1c-7fd8-498b-bdc4-cfb1921a1d60" />
+<img width="500" height="300" alt="72bacab27ee9ea7b9a5ff50e1f710bb2" src="https://github.com/user-attachments/assets/9835cca5-070f-468f-9e01-8032c108b588" />
 
-如果已经知道当前标记 ID，例如 ID 19，建议固定追踪：
-
-```text
---marker-id 19
-```
-
-如果只是临时测试，可以锁定检测到的第一个标记：
-
-```text
---marker-id -1
-```
-
-三面立体标记测试时，固定 ID 最明确。自动模式会锁定首次检测到的 ID，不会在不同面之间自动切换；按 `R` 可以重新锁定。
-
-## 制作标记建议
-
-- 保留完整黑边。
-- 标记周围留出白色或空白边距。
-- 表面尽量平整。
-- 避免强反光材料。
-- 打印或加工后重新测量实际边长。
-
-## 后续三面融合
-
-如果要让三面标记共同表示同一个手掌坐标系，需要额外建立每一面的固定 3D 关系，例如：
-
-```text
-marker_id_19 -> palm frame
-marker_id_20 -> palm frame
-marker_id_21 -> palm frame
-```
-
-这需要实体模型的精确尺寸、夹角和每个标记 ID 的位置，不能只靠照片准确推出来。
+<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/b6707aae-dc75-4236-8c70-2eb4b1219d1d" />
